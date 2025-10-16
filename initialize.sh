@@ -6,4 +6,7 @@ rm -rf /content/sample_data
 cp -r /opt/datacarving-lab/challenges /content
 mkdir -p /content/retrieved_data
 
-apt install dcfldd sleuthkit xxd binwalk scalpel 
+apt install dcfldd sleuthkit xxd scalpel
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+PATH=/root/.cargo/bin:$PATH
+cargo install binwalk
