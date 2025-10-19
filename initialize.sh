@@ -7,8 +7,11 @@ cp -r /opt/datacarving-lab/challenges /content
 mkdir -p /content/retrieved_data
 
 apt install dcfldd sleuthkit xxd scalpel
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 export PATH=/root/.cargo/bin:$PATH
 source "/root/.cargo/env"
 cargo install binwalk
 ln -s /root/.cargo/bin/binwalk /usr/local/bin/binwalk
+
+ln -s /opt/datacarving-lab/scalpel.conf /etc/scalpel.conf
