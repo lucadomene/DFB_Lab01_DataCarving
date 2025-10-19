@@ -11,3 +11,4 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 export PATH=/root/.cargo/bin:$PATH
 source "/root/.cargo/env"
 cargo install binwalk
+ln -s /root/.cargo/bin/binwalk /usr/local/bin/binwalk
