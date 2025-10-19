@@ -8,6 +8,6 @@ mkdir -p /content/retrieved_data
 
 apt install dcfldd sleuthkit xxd scalpel
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-cargo install binwalk
 PATH=/root/.cargo/bin:$PATH
 source "root/.cargo/env"
+cargo install binwalk
